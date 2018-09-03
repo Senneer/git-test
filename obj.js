@@ -14,28 +14,23 @@ fish.type = 'Fishes';
 console.log(fish.type);
 console.log(Animal.type);
 
-
-
-const obj={
-	b : 6,
-	a : 5,
+const obj = {
+  b : 6,
+  a : 5
 }
 
-function vah(obj, key){
-	return obj[key] * 3;
+function obj(obj, key){
+  return obj[key] * 3;
 }
 
-console.log(vah(obj, 'b'));
+console.log(obj(obj, 'b'));
 
-
-
-
-function MyObject(id, name){
-	this._id = id;
-    this._name = name;
+function myObject(id, name){
+  this._id = id;
+  this._name = name;
 } 
 
-var MyFirstObjectInstance = new MyObject(5,"Sample");
-var MySecondObjectInstace = new MyObject(12,"Othe Sample"); 
+var MyFirstObjectInstance = new MyObject(5, "Sample");
+var MySecondObjectInstace = new MyObject(12, "Othe Sample"); 
 
 console.log(MySecondObjectInstace);

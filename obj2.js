@@ -14,10 +14,10 @@ console.log("Задание объекты1", user);
 let schedule = {};
 
 function isEmpty(obj) {
-	for (let key in obj) {
-		return false;
-	}
-		return true;
+  for (let key in obj) {
+    return false;
+  }
+    return true;
 };
 
 console.log("Задание объекты2, пустой массив",isEmpty(schedule)); 
@@ -35,11 +35,11 @@ let salaries = {
 };
 
 function sumValue(obj) {
-	let rez = 0 
-	for (let key in obj) {
-		rez += obj[key];
-	}	
-	return rez;
+  let rez = 0; 
+  for (let key in obj) {
+    rez += obj[key];
+  } 
+  return rez;
 }
 
 console.log("Задание объекты3", sumValue(salaries));
@@ -53,12 +53,12 @@ let menu = {
 };
 
 function multiplyNumeric(obj) {
-	for (let key in obj) {
-		if (isNumeric(obj[key])){
-			obj[key] *= 2;
-		}
-	}
-	return obj;
+  for (let key in obj) {
+    if (isNumeric(obj[key])) {
+      obj[key] *= 2;
+    }
+  }
+  return obj;
 }
 
 function isNumeric(n) {
